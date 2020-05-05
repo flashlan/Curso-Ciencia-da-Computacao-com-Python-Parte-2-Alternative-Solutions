@@ -8,7 +8,7 @@ matriz2 = ['maria', ' josé ', '   PAULO', 'Catarina   ']
 
 
 def menor_nome(matriz):
-    pont = "10000000000000"
+    pont = "dumdumchakatungalebiskatungararibe"
     for i in range(len(matriz)):
         m = matriz[i].strip().capitalize()
         if len(m) < len(pont):
