@@ -4,15 +4,14 @@ Created on Sun May  3 22:56:24 2020
 
 @author: pcstream
 """
+matriz2 = ['maria', ' josé ', '   PAULO', 'Catarina   ']
 
-matriz2 = ["nome", "marcelo","Äna", "Gilberto", "zé", "Adalberto"]
 
-
-def mais_curto(matriz):
+def menor_nome(matriz):
     pont = "10000000000000"
     for i in range(len(matriz)):
-        if len(matriz[i]) < len(pont):
-            pont = matriz[i]
-        i = i +i
-        pont.capitalize().strip()
+        m = matriz[i].strip().capitalize()
+        if len(m) < len(pont):
+            pont = m
+        i += i
     return pont
