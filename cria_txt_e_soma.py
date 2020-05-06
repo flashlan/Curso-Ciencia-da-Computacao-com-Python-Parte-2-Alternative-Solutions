@@ -17,8 +17,14 @@ def cria_e_soma(linhas, arquivo = "arquivo.txt"):
         for line in range(linhas): # arrumar
             arqu.write(input("Digite a sequencia de numeros para somar na linha separando cada um com um espaço. \n"))
     with open(arquivo, 'r', encoding= 'utf-8') as arq:
-        #conteudo = arq.read()
+     
         for line in arq:
-            newlist = sepa(arquivo, ' ')
-            print(newlist)
-            # implementar soma
+            saida = line.split(' ')
+            val = []
+            for num in saida:
+                val.append(int(num))
+            total = sum(val)
+            # errado
+           
+    print(total)
+            
