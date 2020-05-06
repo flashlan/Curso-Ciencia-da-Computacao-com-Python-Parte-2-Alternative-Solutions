@@ -21,3 +21,4 @@ def cria_e_soma(linhas, arquivo = "arquivo.txt"):
         for line in arq:
             newlist = sepa(arquivo, ' ')
             print(newlist)
+            # implementar soma
